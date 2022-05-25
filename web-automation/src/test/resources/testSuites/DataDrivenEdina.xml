@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Edina" configfailurepolicy="continue">
+
+	<listeners>
+		<listener class-name="com.generic.AnnotationTransformer" />
+		<listener class-name="com.generic.CustomReporter" />
+	</listeners>
+	<parameter name="EdinaRealityDataTable" value="EdinaRealityDataTable.xlsx"></parameter>
+	<test name="EdinaRealty">
+		<classes>
+			<class name="com.datadriventestcases.LoginDataDrivenTest"></class>
+			<class name="com.datadriventestcases.SavedSearchTest"></class>
+			<class name="com.datadriventestcases.SavedPropertiesTest"></class>
+			<class name="com.datadriventestcases.BrokenLinksTest"></class>
+			<class name="com.datadriventestcases.BrokenImageTest"></class>
+			<class name="com.datadriventestcases.SalesHistoryAndTaxSummary"></class>
+			<class name="com.datadriventestcases.MilestoneError"></class>
+			<class name="com.datadriventestcases.SignUpTest"></class>
+<!--				<class name="com.datadriventestcases.MySettings"></class>-->
+
+            </classes>
+        </test>
+
+    </suite>
